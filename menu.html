@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lila & Tarçın — Menü</title>
+    <meta name="description" content="Taze el yapımı tatlılarımız, sıcak ve soğuk içeceklerimiz ile enfes atıştırmalıklarımızın yer aldığı, özel çizgisel animasyonlarla süslü fotosuz menümüz.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigasyon Barı -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <svg class="logo-lt" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="56" height="56" rx="18" fill="#FFFDF5" stroke="#8B5CF6" stroke-width="2.5"/>
+                    <path d="M16 16V42H34" stroke="#4A3F28" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M28 18H46M37 18V36" stroke="#8B5CF6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="34" cy="42" r="3" fill="#8B5CF6"/>
+                </svg>
+                <span class="logo-text">Lila <span>&</span> Tarçın</span>
+            </a>
+            
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="hamburger" aria-label="Menüyü Aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Biz Kimiz?</a></li>
+                <li><a href="menu.html" class="active">Menü</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sayfa Başlığı -->
+        <header class="page-header">
+            <h1 class="section-title" style="font-family: 'Pacifico', cursive; color: var(--primary-warm); font-size: clamp(2.5rem, 6vw, 3.8rem); margin-bottom: 8px;">Menü</h1>
+            <div class="section-divider" style="width: 60px; height: 3px; background: linear-gradient(90deg, var(--accent-lila), var(--accent-yellow)); margin: 15px auto;"></div>
+        </header>
+
+        <!-- KÖKTEN DEĞİŞEN YENİ BOARD MENÜ TASARIMI -->
+        <section class="menu-section">
+            <div class="menu-board-wrapper">
+                
+                <!-- 🥐 KOLON 1: NEFİS YİYECEKLER (10 Ürün) -->
+                <div class="menu-board-column">
+                    <h2 class="menu-board-title">🥐 Nefis <span>Yiyecekler</span></h2>
+                    
+                    <!-- Ürün 1: Çilekli Tart -->
+                    <div class="menu-item-row">
+                        <span class="menu-card-tag">⭐ Popüler</span>
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Tart Tabanı -->
+                                <path class="draw-path" d="M12 44C20 48 44 48 52 44L56 34H8L12 44Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <!-- Dalgalı Tart Kenarı -->
+                                <path class="draw-path" d="M8 34C11 32 13 36 16 34C19 32 21 36 24 34C27 32 29 36 32 34C35 32 37 36 40 34C43 32 45 36 48 34C51 32 53 36 56 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <!-- Çilek Çizimleri -->
+                                <path class="draw-path" d="M22 28C22 23 26 21 26 21C26 21 30 23 30 28C30 31 26 33 26 33C26 33 22 31 22 28Z" stroke="#E8C547" stroke-width="1.8"/>
+                                <path class="draw-path" d="M34 28C34 23 38 21 38 21C38 21 42 23 42 28C42 31 38 33 38 33C38 33 34 31 34 28Z" stroke="#E8C547" stroke-width="1.8"/>
+                                <!-- Parıltı -->
+                                <path class="sparkle" d="M14 18L17 21M48 16L51 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Çilekli Tart</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺145</span>
+                            </div>
+                            <p class="menu-item-desc">Mevsimin en taze çıtır çilekleri, el yapımı taze pastacı kreması ve çıtır tart tabanı.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 2: Orman Meyveli Cheesecake -->
+                    <div class="menu-item-row">
+                        <span class="menu-card-tag">💜 Favori</span>
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Dilim Cheesecake -->
+                                <path class="draw-path" d="M10 44L50 44L54 28L14 24L10 44Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path class="draw-path" d="M14 24L10 14L54 28" stroke="currentColor" stroke-width="2"/>
+                                <!-- Berry Taneleri -->
+                                <circle cx="24" cy="22" r="3" fill="currentColor"/>
+                                <circle cx="32" cy="24" r="2.5" fill="currentColor"/>
+                                <circle cx="38" cy="26" r="3.5" fill="currentColor"/>
+                                <!-- Parıltı -->
+                                <path class="sparkle" d="M44 14L47 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Orman Meyveli Cheesecake</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺165</span>
+                            </div>
+                            <p class="menu-item-desc">Fırınlanmış kremsi peynir tabanı, üzerine yaban mersini ve ahududu sosu dolgusu.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 3: Çikolatalı Sufle -->
+                    <div class="menu-item-row">
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Sufle Kabı (Ramekin) -->
+                                <path class="draw-path" d="M14 36H50V52C50 55 47 58 44 58H20C17 58 14 55 14 52V36Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <!-- Taşan Sufle Kubbesi -->
+                                <path class="draw-path" d="M10 36C10 26 54 26 54 36" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                                <!-- Damlayan Çikolata -->
+                                <path class="drip-chocolate" d="M26 36C26 42 29 44 29 44C29 44 32 42 32 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <!-- Buharlar -->
+                                <path class="steam-line steam-1" d="M24 22C24 16 27 16 27 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path class="steam-line steam-2" d="M38 22C38 16 41 16 41 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Çikolatalı Sufle</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺135</span>
+                            </div>
+                            <p class="menu-item-desc">Akışkan Belçika çikolatası dolgulu, taze fırınlanmış sufle. Pudra şekeri ile servis edilir.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 4: San Sebastian Cheesecake -->
+                    <div class="menu-item-row">
+                        <span class="menu-card-tag">🔥 Akışkan</span>
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Dilim San Sebastian -->
+                                <path class="draw-path" d="M8 46L46 46L54 30L16 26L8 46Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <!-- Karamelize Üst Kısım -->
+                                <path class="draw-path" d="M16 26C20 22 42 24 54 30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                                <!-- Akışkan Krema Kıvrımı -->
+                                <path class="drip-chocolate" d="M8 46C12 48 14 52 14 52" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <!-- Parıltı -->
+                                <path class="sparkle" d="M48 16L51 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">San Sebastian</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺155</span>
+                            </div>
+                            <p class="menu-item-desc">İçi nemli ve akışkan kıvamlı, dışı ise karamelize edilmiş meşhur yanık Bask cheesecake.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 5: Pastel de Nata -->
+                    <div class="menu-item-row">
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Çıtır Milföy Çanağı -->
+                                <path class="draw-path" d="M12 36C12 48 52 48 52 36" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path class="draw-path" d="M8 32H56V36H8V32Z" stroke="currentColor" stroke-width="2"/>
+                                <!-- Yanık Custard Sarmalları -->
+                                <path class="draw-path" d="M32 22C24 22 22 28 32 30C42 32 38 38 30 38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Pastel de Nata</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺65</span>
+                            </div>
+                            <p class="menu-item-desc">Kat kat çıtır çıtır milföy çanağı içerisinde fırınlanmış, karamelize nefis Portekiz kreması.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 6: Cevizli Havuçlu Kek -->
+                    <div class="menu-item-row">
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Kek Dilimi -->
+                                <path class="draw-path" d="M10 46L48 46L52 28L14 26L10 46Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path class="draw-path" d="M14 26L30 14L52 28" stroke="currentColor" stroke-width="2"/>
+                                <!-- Kek İçindeki Havuç Detayı -->
+                                <path class="draw-path" d="M26 32L34 38" stroke="#E8C547" stroke-width="2" stroke-linecap="round"/>
+                                <path class="draw-path" d="M30 32C32 30 34 32 34 32" stroke="#8B5CF6" stroke-width="1.5"/>
+                                <!-- Ceviz Parçacıkları -->
+                                <circle cx="20" cy="38" r="1.5" fill="currentColor"/>
+                                <circle cx="42" cy="36" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Cevizli Havuçlu Kek</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺80</span>
+                            </div>
+                            <p class="menu-item-desc">Yoğun tarçın kokusu, taze havuç rendesi ve bol ceviz parçalarıyla fırınlanmış dilim anne keki.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 7: Avokado Toast -->
+                    <div class="menu-item-row">
+                        <span class="menu-card-tag">🥑 Sağlıklı</span>
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Ekmek Dilimi -->
+                                <path class="draw-path" d="M16 26C16 20 22 16 32 16C42 16 48 20 48 26V48H16V26Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path class="draw-path" d="M12 48H52" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <!-- Dalgalı Avokado Kreması -->
+                                <path class="draw-path" d="M22 36C26 32 30 40 34 36C38 32 42 40 46 36" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"/>
+                                <!-- Pul Biber Noktaları -->
+                                <circle cx="28" cy="26" r="1.5" fill="#E8C547"/>
+                                <circle cx="36" cy="30" r="1.5" fill="#E8C547"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Avokado Toast</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺125</span>
+                            </div>
+                            <p class="menu-item-desc">Kendi mayamızdan ekşi mayalı ekmek üzerine taze avokado püresi, domatesler ve özel kekik harmanı.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 8: Kruvasan Sandviç -->
+                    <div class="menu-item-row">
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Hilal Kruvasan -->
+                                <path class="wobble-croissant draw-path" d="M10 38C10 24 20 16 32 16C44 16 54 24 54 38C44 34 36 36 32 30C28 36 20 34 10 38Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <!-- Sandviç Malzemeleri (Taşan Marul/Domates) -->
+                                <path class="draw-path" d="M8 35C16 32 20 40 32 35C44 40 48 32 56 35" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Kruvasan Sandviç</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺120</span>
+                            </div>
+                            <p class="menu-item-desc">Bol tereyağlı çıtır kruvasan içerisine Ezine peyniri, çengelköy salatalığı, domates ve yeşillik dolgusu.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 9: Fesleğenli & Kaşarlı Tost -->
+                    <div class="menu-item-row">
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Çapraz Tost Ekmekleri -->
+                                <path class="draw-path" d="M12 28L32 12L52 28V48H12V28Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path class="draw-path" d="M16 32L32 18L48 32" stroke="currentColor" stroke-width="1.8"/>
+                                <!-- Sarkan Erimiş Peynir Detayı -->
+                                <path class="drip-chocolate" d="M22 48C22 53 25 55 27 52C29 49 32 54 35 50" stroke="#E8C547" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Fesleğenli & Kaşarlı Tost</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺110</span>
+                            </div>
+                            <p class="menu-item-desc">Ekşi mayalı tost ekmeği, erimiş Kars kaşarı, kurutulmuş domates ve ev yapımı fesleğen pesto sosu eşliğinde.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 10: Çikolatalı Sıcak Kruvasan -->
+                    <div class="menu-item-row">
+                        <span class="menu-card-tag">🍫 Sıcak</span>
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Hilal Kruvasan -->
+                                <path class="wobble-croissant draw-path" d="M10 38C10 24 20 16 32 16C44 16 54 24 54 38C44 34 36 36 32 30C28 36 20 34 10 38Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <!-- Çikolata Çizgileri -->
+                                <path class="drip-chocolate" d="M20 22C24 28 28 20 32 28C36 20 40 28 44 22" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Çikolatalı Sıcak Kruvasan</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺95</span>
+                            </div>
+                            <p class="menu-item-desc">Taze fırınlanmış tereyağlı çıtır kruvasan katları arasında eriyen yoğun Belçika çikolatası dolgusu.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ☕ KOLON 2: NEFİS İÇECEKLER (10 Ürün) -->
+                <div class="menu-board-column">
+                    <h2 class="menu-board-title">☕ Nefis <span>İçecekler</span></h2>
+                    
+                    <!-- Ürün 11: İmzalı Latte -->
+                    <div class="menu-item-row">
+                        <span class="menu-card-tag">☕ İmza</span>
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Kahve Fincanı -->
+                                <path class="draw-path" d="M14 28H50V42C50 48 45 52 38 52H26C19 52 14 48 14 42V28Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path class="draw-path" d="M50 32H55C58 32 60 34 60 37C60 40 58 42 55 42H50" stroke="currentColor" stroke-width="2"/>
+                                <!-- Latte Art Yaprak Deseni -->
+                                <path class="draw-path" d="M26 34C32 28 32 42 38 34" stroke="#E8C547" stroke-width="2" stroke-linecap="round"/>
+                                <!-- Buharlar -->
+                                <path class="steam-line steam-1" d="M22 20C22 14 25 14 25 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path class="steam-line steam-2" d="M32 20C32 14 35 14 35 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">İmzalı Latte</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺95</span>
+                            </div>
+                            <p class="menu-item-desc">Özel harman Arabica çekirdekleri, ipeksi kadife süt köpüğü ve üstüne serpilen organik tarçın esintisi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 12: Türk Kahvesi -->
+                    <div class="menu-item-row">
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Otantik fincan -->
+                                <path class="draw-path" d="M18 32H46V44C46 48 42 52 38 52H26C22 52 18 48 18 44V32Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path class="draw-path" d="M46 36H50C52 36 54 38 54 40C54 42 52 44 50 44H46" stroke="currentColor" stroke-width="2"/>
+                                <!-- Yanında Su Bardağı -->
+                                <path class="draw-path" d="M8 38H14L12 52H10L8 38Z" stroke="currentColor" stroke-width="1.8"/>
+                                <!-- Buharlar -->
+                                <path class="steam-line steam-1" d="M26 24C26 18 29 18 29 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                                <path class="steam-line steam-2" d="M36 24C36 18 39 18 39 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Türk Kahvesi</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺75</span>
+                            </div>
+                            <p class="menu-item-desc">Bakır cezvede yavaş yavaş demlenmiş, bol köpüklü taze çekilmiş kahve. Su ve lokum ile ikram edilir.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 13: Espresso Macchiato -->
+                    <div class="menu-item-row">
+                        <span class="menu-card-tag">⚡ Yoğun</span>
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Minik Espresso Fincanı -->
+                                <path class="draw-path" d="M20 32H44V44C44 47 41 50 37 50H27C23 50 20 47 20 44V32Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path class="draw-path" d="M44 36H48C50 36 51 37 51 39C51 41 50 42 48 42H44" stroke="currentColor" stroke-width="1.8"/>
+                                <!-- Köpük Beneği -->
+                                <circle cx="32" cy="38" r="3" fill="#E8C547"/>
+                                <!-- Buhar -->
+                                <path class="steam-line steam-1" d="M32 24C32 18 35 18 35 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Espresso Macchiato</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺80</span>
+                            </div>
+                            <p class="menu-item-desc">Double shot yoğun İtalyan espressosu, üzerine kondurulmuş bir kaşık kremsi süt köpüğü dolgusu.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 14: Organik Bitki Çayları -->
+                    <div class="menu-item-row">
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Porselen Demlik -->
+                                <path class="draw-path" d="M20 30C20 20 44 20 44 30V48H20V30Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path class="draw-path" d="M44 34C48 34 52 30 52 30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path class="draw-path" d="M20 38C14 38 10 42 10 42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <!-- Lavanta Yaprağı Süslemesi -->
+                                <path class="draw-path" d="M32 20C32 14 35 12 35 12" stroke="#8B5CF6" stroke-width="1.8"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Organik Bitki Çayı</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺70</span>
+                            </div>
+                            <p class="menu-item-desc">Özel porselen demlikte taze lavanta tomurcukları, papatya ve ıhlamur yapraklarının dinlendirici harmanı.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 15: White Chocolate Mocha -->
+                    <div class="menu-item-row">
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Uzun Kupa Bardak -->
+                                <path class="draw-path" d="M18 20H46L42 52H22L18 20Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path class="draw-path" d="M46 26H51C53 26 55 28 55 30C55 32 53 34 51 34H46" stroke="currentColor" stroke-width="1.8"/>
+                                <!-- Krema Kubbesi -->
+                                <path class="draw-path" d="M18 20C18 10 46 10 46 20" stroke="#8B5CF6" stroke-width="2" stroke-linejoin="round"/>
+                                <!-- Çikolata Sarmalı -->
+                                <path class="draw-path" d="M24 16C28 12 36 12 40 16" stroke="#E8C547" stroke-width="1.5"/>
+                                <!-- Buhar -->
+                                <path class="steam-line steam-1" d="M32 8C32 4 34 4 34 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">White Chocolate Mocha</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺90</span>
+                            </div>
+                            <p class="menu-item-desc">Yoğun çift shot espresso, premium beyaz çikolata sosu, ipeksi sıcak süt ve çırpılmış krema süslemesi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 16: Türk Çayı -->
+                    <div class="menu-item-row">
+                        <span class="menu-card-tag">🇹🇷 Demleme</span>
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- İnce Belli Çay Bardağı -->
+                                <path class="draw-path" d="M22 20C22 28 26 30 24 44C24 48 40 48 40 44C38 30 42 28 42 20H22Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <!-- Çay Tabağı -->
+                                <path class="draw-path" d="M12 48H52L46 54H18L12 48Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <!-- Buhar -->
+                                <path class="steam-line steam-1" d="M28 14C28 8 31 8 31 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path class="steam-line steam-2" d="M36 14C36 8 39 8 39 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Türk Çayı</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺35</span>
+                            </div>
+                            <p class="menu-item-desc">Rize'nin seçkin bahçelerinden toplanan çay yapraklarının demlenmesiyle sunulan taze çay.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 17: Lavantalı Ice Latte -->
+                    <div class="menu-item-row">
+                        <span class="menu-card-tag">💜 Soğuk İmza</span>
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Soğuk Kahve Bardağı -->
+                                <path class="draw-path" d="M18 14H46L40 54H24L18 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <!-- Buz Küpleri -->
+                                <rect x="24" y="24" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.5" transform="rotate(15 24 24)"/>
+                                <rect x="32" y="34" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.5" transform="rotate(-10 32 34)"/>
+                                <!-- Lavanta Dalı -->
+                                <path class="draw-path" d="M22 10C26 12 28 6 30 14" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"/>
+                                <!-- Baloncuklar -->
+                                <circle class="bubble bubble-1" cx="28" cy="44" r="2" fill="currentColor"/>
+                                <circle class="bubble bubble-2" cx="36" cy="40" r="2.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Lavantalı Ice Latte</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺105</span>
+                            </div>
+                            <p class="menu-item-desc">Doğal lavanta özü şurubumuz, çift shot espresso, soğuk süt ve bol buz eşliğinde ferahlatıcı lezzet.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 18: Ev Yapımı Limonata -->
+                    <div class="menu-item-row">
+                        <span class="menu-card-tag">🍋 Taze Sıkım</span>
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Limonata kavanozu -->
+                                <path class="draw-path" d="M18 14H46L40 54H24L18 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <!-- Pipet -->
+                                <path class="draw-path" d="M30 6L38 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                                <!-- Limon Dilimi (Rim) -->
+                                <circle class="rotate-lemon" cx="18" cy="14" r="8" stroke="#E8C547" stroke-width="2"/>
+                                <!-- Baloncuklar -->
+                                <circle class="bubble bubble-1" cx="26" cy="38" r="2" fill="currentColor"/>
+                                <circle class="bubble bubble-2" cx="34" cy="30" r="2" fill="currentColor"/>
+                                <circle class="bubble bubble-3" cx="30" cy="46" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Ev Yapımı Limonata</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺85</span>
+                            </div>
+                            <p class="menu-item-desc">Taze nane yaprakları, sıkma limon suları ve organik bal ile demlenmiş soğuk ferahlık deposu.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 19: Cold Brew -->
+                    <div class="menu-item-row">
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Cold Brew Şişesi -->
+                                <path class="draw-path" d="M22 22H42V54H22V22Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path class="draw-path" d="M28 22V10H36V22" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <!-- Etiket -->
+                                <rect x="26" y="30" width="12" height="14" rx="1" stroke="#8B5CF6" stroke-width="1.5"/>
+                                <!-- Baloncuklar -->
+                                <circle class="bubble bubble-1" cx="27" cy="48" r="1.5" fill="currentColor"/>
+                                <circle class="bubble bubble-2" cx="37" cy="46" r="2" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Cold Brew</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺110</span>
+                            </div>
+                            <p class="menu-item-desc">Soğuk suyla 18 saat boyunca damla damla süzülerek hazırlanmış, yumuşak içimli aromatik filtre kahve.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 20: Çilekli Milkshake -->
+                    <div class="menu-item-row">
+                        <div class="menu-item-svg-box">
+                            <svg class="menu-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Büyük Boy Milkshake Bardağı -->
+                                <path class="draw-path" d="M18 16H46L38 54H26L18 16Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <!-- Pipet -->
+                                <path class="draw-path" d="M38 6L32 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <!-- Krema Kubbesi ve Çilek Süsü -->
+                                <path class="draw-path" d="M18 16C18 6 46 6 46 16" stroke="#8B5CF6" stroke-width="2" stroke-linejoin="round"/>
+                                <circle cx="32" cy="10" r="2.5" fill="#E8C547"/>
+                                <!-- Baloncuklar -->
+                                <circle class="bubble bubble-1" cx="24" cy="40" r="2.5" fill="currentColor"/>
+                                <circle class="bubble bubble-2" cx="34" cy="34" r="2" fill="currentColor"/>
+                                <circle class="bubble bubble-3" cx="30" cy="48" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Çilekli Milkshake</h3>
+                                <div class="menu-dotted-leader"></div>
+                                <span class="menu-item-price">₺115</span>
+                            </div>
+                            <p class="menu-item-desc">Gerçek Güzelbahçe çilekleri, tam yağlı organik süt ve vanilyalı gelato dondurmasının enfes birleşimi.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-wrapper">
+                        <svg class="logo-lt" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="56" height="56" rx="18" fill="rgba(255,255,255,0.08)" stroke="#8B5CF6" stroke-width="2.5"/>
+                            <path d="M16 16V42H34" stroke="#FFFDF5" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M28 18H46M37 18V36" stroke="#8B5CF6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="logo-text" style="color: #FFFDF5;">Lila <span>&</span> Tarçın</span>
+                    </a>
+                    <p>Her yudumda mutluluk, her lokmada huzur. Güzelbahçe sahilindeki sıcak sığınağımızda tatlı anılar biriktirmek için sizleri bekliyoruz. 🌼</p>
+                    <div class="footer-socials">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-hours">
+                    <h4 class="footer-section-title">Çalışma Saatlerimiz</h4>
+                    <ul class="footer-list">
+                        <li>Pazartesi - Cuma: <span>08:00 - 22:00</span></li>
+                        <li>Cumartesi - Pazar: <span>09:00 - 23:00</span></li>
+                        <li>Mutfak Kapanış: <span>21:30</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-section-title">Hızlı Menü</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html">Biz Kimiz?</a></li>
+                        <li><a href="menu.html">Lezzetlerimiz</a></li>
+                        <li><a href="galeri.html">Galerimiz</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lila & Tarçın Cafe. Tüm hakları saklıdır.</p>
+                <span class="footer-signature">Gününüzü Tatlandırmaya Geldik...</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

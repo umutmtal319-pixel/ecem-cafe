@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lila & Tarçın — Ana Sayfa</title>
+    
+    <!-- Meta Açıklamaları & SEO -->
+    <meta name="description" content="İzmir Güzelbahçe sahilinde lila ve tarçın kokularının harmanlandığı, taptaze el yapımı pastalar ve özel kavrulmuş kahvelerle bezeli sıcacık sığınağınız.">
+    <meta name="keywords" content="Lila & Tarçın, Kafe, İzmir Kafe, Güzelbahçe Kahve, El Yapımı Pasta, Çilekli Tart, Lavantalı Latte">
+    
+    <!-- CSS Dosyası Bağlantısı -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigasyon Barı -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <!-- L & T Birleşik Logo (Premium SVG) -->
+                <svg class="logo-lt" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="56" height="56" rx="18" fill="#FFFDF5" stroke="#8B5CF6" stroke-width="2.5"/>
+                    <path d="M16 16V42H34" stroke="#4A3F28" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M28 18H46M37 18V36" stroke="#8B5CF6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="34" cy="42" r="3" fill="#8B5CF6"/>
+                </svg>
+                <span class="logo-text">Lila <span>&</span> Tarçın</span>
+            </a>
+            
+            <!-- Mobil Hamburger için Checkbox Hack -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="hamburger" aria-label="Menüyü Aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Biz Kimiz?</a></li>
+                <li><a href="menu.html">Menü</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 🏠 Giriş Bölümü (Hero) -->
+        <section class="hero">
+            <!-- Unsplash'ten Kaliteli Arka Plan -->
+            <div class="hero-image-bg" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80');"></div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <!-- Büyük Çizim Logosu (Steaming Coffee & Lavender Drawing) -->
+                <div class="hero-logo-container" style="margin-bottom: 28px;">
+                    <svg class="hero-logo-drawing" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 130px; height: 130px; color: var(--accent-yellow); filter: drop-shadow(0 8px 24px rgba(139, 92, 246, 0.25)); margin: 0 auto;">
+                        <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2.5" stroke-dasharray="6 6"/>
+                        <!-- Kahve Fincanı Çizimi -->
+                        <path class="draw-path" d="M28 44H64V60C64 65 60 69 55 69H37C32 69 28 65 28 60V44Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                        <path class="draw-path" d="M64 48H70C73 48 75 50 75 53C75 56 73 58 70 58H64" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <path class="draw-path" d="M22 75H70" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <!-- Lavanta Dalı Çizimi -->
+                        <path class="draw-path" d="M22 45C22 35 30 25 30 25" stroke="#C4B5FD" stroke-width="2" stroke-linecap="round"/>
+                        <path class="draw-path" d="M22 45C28 48 32 40 32 40" stroke="#C4B5FD" stroke-width="2" stroke-linecap="round"/>
+                        <!-- Buharlar -->
+                        <path class="steam-line steam-1" d="M38 36C38 30 42 30 42 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <path class="steam-line steam-2" d="M46 36C46 30 50 30 50 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <path class="steam-line steam-3" d="M54 36C54 30 58 30 58 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                
+                <div class="hero-badge">✨ KOKUSUYLA BÜYÜLEYEN DURAK</div>
+                
+                <h1 class="hero-title">Gününüzü<br>Tatlandırmaya Geldik</h1>
+                <p class="hero-subtitle">
+                    Fırından yeni çıkmış sıcacık lezzetler ve usta ellerden dökülen taze kahve esintileriyle Lila & Tarçın'da huzura davetlisiniz. 🌼
+                </p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn-primary">Menüyü Keşfet</a>
+                    <a href="iletisim.html" class="btn-secondary">Bize Ulaşın</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 🦶 Sayfa Sonu (Footer) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-wrapper">
+                        <svg class="logo-lt" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="56" height="56" rx="18" fill="rgba(255,255,255,0.08)" stroke="#8B5CF6" stroke-width="2.5"/>
+                            <path d="M16 16V42H34" stroke="#FFFDF5" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M28 18H46M37 18V36" stroke="#8B5CF6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="logo-text" style="color: #FFFDF5;">Lila <span>&</span> Tarçın</span>
+                    </a>
+                    <p>Her yudumda mutluluk, her lokmada huzur. Güzelbahçe sahilindeki sıcak sığınağımızda tatlı anılar biriktirmek için sizleri bekliyoruz. 🌼</p>
+                    <div class="footer-socials">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-hours">
+                    <h4 class="footer-section-title">Çalışma Saatlerimiz</h4>
+                    <ul class="footer-list">
+                        <li>Pazartesi - Cuma: <span>08:00 - 22:00</span></li>
+                        <li>Cumartesi - Pazar: <span>09:00 - 23:00</span></li>
+                        <li>Mutfak Kapanış: <span>21:30</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-section-title">Hızlı Menü</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html">Biz Kimiz?</a></li>
+                        <li><a href="menu.html">Lezzetlerimiz</a></li>
+                        <li><a href="galeri.html">Galerimiz</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lila & Tarçın Cafe. Tüm hakları saklıdır.</p>
+                <span class="footer-signature">Gününüzü Tatlandırmaya Geldik...</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
