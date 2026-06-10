@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lila & Tarçın — Biz Kimiz?</title>
-    <meta name="description" content="2020 yılından bu yana Güzelbahçe sahilinde sevgi ve özenle hazırlanan tatlılarımız, taze kahvelerimiz ve sıcacık hikayemiz hakkında bilgi edinin.">
+    <title>Lila & Tarçın — Kahve Rehberi</title>
+    <meta name="description" content="Lila & Tarçın sahil kafemizin özenle seçilmiş kahve çekirdekleri ve demleme yöntemleri hakkında detaylı bilgiler içeren kahve rehberimiz.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -31,9 +31,9 @@
 
             <ul class="nav-links">
                 <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="hakkimizda.html" class="active">Biz Kimiz?</a></li>
+                <li><a href="hakkimizda.html">Biz Kimiz?</a></li>
                 <li><a href="menu.html">Menü</a></li>
-                <li><a href="kahve-rehberi.html">Kahve Rehberi</a></li>
+                <li><a href="kahve-rehberi.html" class="active">Kahve Rehberi</a></li>
                 <li><a href="iletisim.html">İletişim</a></li>
             </ul>
         </div>
@@ -42,48 +42,79 @@
     <main>
         <!-- Sayfa Başlığı -->
         <header class="page-header">
-            <span class="section-tag">Hikayemiz</span>
-            <h1 class="section-title">Lila & Tarçın Dünyası</h1>
-            <div class="section-divider"></div>
+            <span class="section-tag" style="color: var(--accent-lila); background: var(--accent-yellow-bg); padding: 6px 16px; border-radius: 50px; font-weight: 700;">Kahve Kültürü</span>
+            <h1 class="section-title" style="margin-top: 10px; font-family: 'Pacifico', cursive; color: var(--primary-warm); font-size: clamp(2.5rem, 5vw, 3.5rem);">Kahve Rehberi</h1>
+            <div class="section-divider" style="width: 80px; height: 3px; background: linear-gradient(90deg, var(--accent-lila), var(--accent-yellow)); margin: 15px auto;"></div>
+            <p style="text-align: center; max-width: 600px; margin: 20px auto 0; color: var(--text-muted); font-size: 1.15rem; line-height: 1.8;">Çekirdekten fincana uzanan bu eşsiz yolculukta, farklı demleme yöntemlerinin inceliklerini ve kahvemizin ardındaki sırları keşfedin.</p>
         </header>
 
-        <!-- İçerik Bölümü -->
-        <section class="about">
-            <div class="about-grid">
-                <div class="about-visual">
-                    <!-- Lila & Tarçın Özel Görseli -->
-                    <img src="images/sahil_kafe.png" alt="Lila & Tarçın Sahil Kafesi">
-                </div>
-                
-                <div class="about-text">
-                    <h3>🌿 Tutkuyla Hazırlanmış Doğal Lezzetler</h3>
-                    <p>
-                        Lila & Tarçın, 2020'de kurduğumuz küçük bir hayalin, bugün Güzelbahçe sahilinde hayat bulmuş hali.
-                    </p>
-                    <p>
-                        Burayı tasarlarken tek bir şey istedik: Şehrin gürültüsünden kaçıp soluklanabileceğiniz, buram buram tarçın ve lavanta kokan samimi bir köşe yaratmak. Mutfağımızda ise kuralımız net: Yapay hiçbir şey yok. Tamamen geleneksel el işçiliği, mevsimin en taze meyveleri ve modern tarifler var.
-                    </p>
-                    <p>
-                        Kısacası biz, sevdiklerinizle en güzel anları ve en taze tatları paylaşın diye her sabah aynı heyecanla buradayız. Sizi de bu sıcak sığınağa, bir kahve molasına bekleriz.
-                    </p>
-                    
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Yıllık Tecrübe</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Özel Tarif</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">10B+</span>
-                            <span class="stat-label">Mutlu Müşteri</span>
-                        </div>
+        <section class="coffee-guide-section">
+            <div class="guide-container">
+                <!-- V60 Card -->
+                <div class="guide-card">
+                    <div class="guide-image">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="V60 Demleme">
+                        <div class="guide-badge">Pour Over</div>
                     </div>
+                    <div class="guide-content">
+                        <h3>Hario V60</h3>
+                        <p>Japonya'dan dünyaya yayılan efsanevi V60, 60 derecelik konik yapısı sayesinde suyun çekirdekle mükemmel bir ahenk içinde buluşmasını sağlar. Meyvemsi ve çiçeksi notaları en net şekilde alabileceğiniz bu demleme yöntemi, filtre kahvede temiz ve berrak bir kupa arayanların ilk tercihidir.</p>
+                        <ul class="guide-details">
+                            <li><span>Öğütme</span> Orta - İnce</li>
+                            <li><span>Sıcaklık</span> 92°C - 94°C</li>
+                            <li><span>Süre</span> 2.5 - 3 dk</li>
+                        </ul>
+                    </div>
+                </div>
 
-                    <div class="developer-note" style="margin-top: 30px; padding: 15px 20px; background: rgba(139, 92, 246, 0.05); border-left: 4px solid #8B5CF6; border-radius: 4px; font-style: italic; color: #4A3F28;">
-                        "Bu dijital deneyim, Lila & Tarçın'ın sıcak ruhunu yansıtmak amacıyla <strong>Ecem Irmak Göçlü</strong> tarafından özenle tasarlanmış ve kodlanmıştır."
+                <!-- Chemex Card -->
+                <div class="guide-card reverse">
+                    <div class="guide-image">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80" alt="Chemex Demleme">
+                        <div class="guide-badge">Slow Brew</div>
+                    </div>
+                    <div class="guide-content">
+                        <h3>Chemex</h3>
+                        <p>Zarif kum saati tasarımıyla Chemex, kahve yapımını estetik bir ritüele dönüştürür. Normal filtrelere göre %20 daha kalın olan özel kağıdı sayesinde kahvedeki acı yağları hapseder. Sonuç: Çaya benzeyen, gövdesiz ama inanılmaz aromatik, pürüzsüz bir içim deneyimi.</p>
+                        <ul class="guide-details">
+                            <li><span>Öğütme</span> Orta - Kalın</li>
+                            <li><span>Sıcaklık</span> 93°C - 95°C</li>
+                            <li><span>Süre</span> 3.5 - 4 dk</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Espresso Card -->
+                <div class="guide-card">
+                    <div class="guide-image">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Espresso">
+                        <div class="guide-badge">Classic</div>
+                    </div>
+                    <div class="guide-content">
+                        <h3>Espresso</h3>
+                        <p>Kahvenin en saf, en konsantre ve en güçlü hali. Yaklaşık 9 bar basınçlı suyun, incecik öğütülmüş kahveden sadece 25 saniye içinde geçmesiyle elde edilir. Üzerindeki o altın rengi kalın 'crema', taze çekirdeğimizin ve usta baristalarımızın bir imzasıdır.</p>
+                        <ul class="guide-details">
+                            <li><span>Öğütme</span> İnce (Fine)</li>
+                            <li><span>Sıcaklık</span> 90°C - 93°C</li>
+                            <li><span>Süre</span> 25 - 30 sn</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- French Press Card -->
+                <div class="guide-card reverse">
+                    <div class="guide-image">
+                        <img src="https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?auto=format&fit=crop&w=800&q=80" alt="French Press">
+                        <div class="guide-badge">Immersion</div>
+                    </div>
+                    <div class="guide-content">
+                        <h3>French Press</h3>
+                        <p>Kahvenin suyun içinde demlenmeye bırakıldığı, süzüldükten sonra tüm yağlarının ve gövdesinin fincana geçtiği klasik yöntem. Filtre kağıdı kullanılmadığı için kahvenin doğal dokusu korunur, daha gövdeli, yoğun ve doyurucu bir tat profili sunar.</p>
+                        <ul class="guide-details">
+                            <li><span>Öğütme</span> Kalın (Coarse)</li>
+                            <li><span>Sıcaklık</span> 95°C</li>
+                            <li><span>Süre</span> 4 dk</li>
+                        </ul>
                     </div>
                 </div>
             </div>
